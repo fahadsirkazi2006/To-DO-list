@@ -12,7 +12,7 @@ addTaskBtn.addEventListener("click",function(){
         deleteBtn.textContent="❌";
         deleteBtn.className="delete-btn";
         deleteBtn.addEventListener("click",function(){
-            task_list.remove();        });
+            task_list.removeChild(listElemnet);        });
         listElemnet.appendChild(deleteBtn);
         task_list.appendChild(listElemnet);
         input_box.value="";
