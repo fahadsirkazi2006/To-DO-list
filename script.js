@@ -20,4 +20,11 @@ addTaskBtn.addEventListener("click",function(){
     else{
         alert("Please enter a task");
     }
+
+    const li=document.createElement("li");
+    li.classList.add("task-item");
+
+    li.addEventListener("click",function(){
+        li.classList.toggle("completed");
+    });
 });

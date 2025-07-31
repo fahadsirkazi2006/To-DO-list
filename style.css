@@ -58,6 +58,9 @@ button{
 }
 
 button:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+    cursor: pointer;
     background-color: #0056b3;
 }
 ul{
@@ -81,4 +84,25 @@ li{
    margin-left: 10px;
    color: red;
    cursor: pointer;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.task-item{
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: gray;
+    transition: all 0.3s ease;
+    opacity: 0.6;
 }
